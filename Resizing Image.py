@@ -1,6 +1,8 @@
+import cv2
+ 
+image = cv2.imread("flower.jpg")
 
-
-# resize the image to 200x200px, ignoring aspect ratio
-resized = cv2.resize(image, (200, 200))
-cv2.imshow("Fixed Resizing", resized)
+# resizing the image to 100 x 100 px
+resize = cv2.resize(image, (100, 100))
+cv2.imshow("Resized", resize)
 cv2.waitKey(0)
